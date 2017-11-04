@@ -1,477 +1,485 @@
-<!DOCTYPE html>
-<!--
-  Name: Umbrella. - Photography HTML Template
-  Version: 1.1.1
-  Author: raulvodov, _nK
-  Website: https://nkdev.info
-  Purchase: https://themeforest.net/item/umbrella-photography-html-template/17889537
-  Support: https://nk.ticksy.com
-  License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
-  Copyright 2017.
--->
-
-<html lang="en">
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="_nK">
-    <title>Umbrella. | About.</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
 
-    <!-- START: Styles -->
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Eurybia</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<!-- some base style -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<!-- STYLE FOR Eurybia -->
+	<link rel="stylesheet" href="css/layout.css"/>
+	<!-- COLOR -->
+	<link rel="stylesheet" href="css/color.css"/>
+	<!-- font icons -->
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/et-line.css"/>
+	<link rel="stylesheet" href="css/ionicons.min.css"/>
+	<!-- extensions -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" href="css/retina.css"/>
+	
 
-    <!-- Bootstrap Custom -->
-    <link rel="stylesheet" href="assets/css/bootstrap-custom.min.css">
-
-    <!-- Umbrella -->
-    <link rel="stylesheet" href="assets/css/umbrella.css">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-
-    <!-- END: Styles -->
-
-    <!-- jQuery -->
-    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-
-
-
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	
+	<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+	
+	
 </head>
-
-
-
-<body>
-
-    <!--
-        START: Fixed Layout
-
-        Contains fixed page elements like slider, navigation, logo
-    -->
-    <div class="nk-layout">
-        <!--
-            Slider
-
-            Additional Classes:
-                .nk-slider-hide-titles - hide titles after slide
-
-            Additional Classes Per Slide:
-                .active - active slide on startup
-
-            Additional Attributes:
-                data-active-category - current active category
-                data-autoplay - autoplay delay in milliseconds
-                data-transition-speed - transition speed in milliseconds
-                data-transition-effect - transition effect for slides. Available effects: fade, divide, top, left, right, bottom
-                data-category-transition-speed - transition speed in milliseconds after category change
-                data-category-transition-effect - transition effect for slides after category change
-                data-force-reload - reload slider on ajax page request. Required values like in data-transition-effect attribute.
-
-            Additional Attributes Per Slide:
-                data-categories - list with categories
-                data-background-position - position for slide image. By default "50% 50%"
-
-            Notes:
-                If you want add more then 1 category per slide, type it with | divider.
-                Example: data-categories="Fashion|Portraits|Nature"
-
-                If you want to add slide in all categories, use *
-                Example: data-categories="*"
-        -->
-
-        <div class="nk-slider" data-active-category="Fashion" data-transition-speed="500" data-transition-effect="fade" data-category-transition-speed="500" data-category-transition-effect="left" data-autoplay="false" data-force-reload="false">
-            <div class="nk-slider-item active" data-categories="Fashion" data-background-position="50% 20%">
-                <img src="assets/images/slide-1.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 10%">
-                <img src="assets/images/slide-2.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Nature" data-background-position="50% 30%">
-                <img src="assets/images/slide-11.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 10%">
-                <img src="assets/images/slide-4.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 50%">
-                <img src="assets/images/slide-5.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Portraits" data-background-position="50% 50%">
-                <img src="assets/images/slide-6.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 5%">
-                <img src="assets/images/slide-7.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 20%">
-                <img src="assets/images/slide-8.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 5%">
-                <img src="assets/images/slide-9.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Portraits" data-background-position="50% 20%">
-                <img src="assets/images/slide-10.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Nature" data-background-position="50% 5%">
-                <img src="assets/images/slide-3.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Nature" data-background-position="50% 5%">
-                <img src="assets/images/slide-12.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Nature" data-background-position="50% 5%">
-                <img src="assets/images/slide-13.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 5%">
-                <img src="assets/images/slide-14.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Fashion" data-background-position="50% 5%">
-                <img src="assets/images/slide-15.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Portraits" data-background-position="50% 5%">
-                <img src="assets/images/slide-16.jpg" alt="">
-            </div>
-            <div class="nk-slider-item" data-categories="Portraits" data-background-position="50% 5%">
-                <img src="assets/images/slide-17.jpg" alt="">
-            </div>
-        </div>
-
-
-        <!-- Top Center -->
-        <div class="nk-layout-top-center">
-            <nav class="nk-nav">
-                <ul class="nk-slider-categories">
-                    <!-- Here will be inserted available slider categories -->
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Bottom Right -->
-        <div class="nk-layout-bottom-right">
-            <!--
-                START: Slider Navigation
-
-                Additional Classes:
-                    .nk-slider-nav-slim
-            -->
-            <div class="nk-slider-nav">
-                <ul>
-                    <!-- Here will be inserted slider bullets -->
-                </ul>
-                <div>
-                    <div class="nk-slider-nav-prev">
-                        <span class="nk-icon-arrow-up"></span>
-                    </div>
-                    <div class="nk-slider-nav-next">
-                        <span class="nk-icon-arrow-down"></span>
-                    </div>
-                </div>
-            </div>
-            <!-- END: Slider Navigation -->
-        </div>
-
-        <!-- Top Left -->
-        <div class="nk-layout-top-left">
-
-            <a href="./" class="nk-nav-logo">
-                <img src="assets/images/logo.png" alt="" width="133" data-logo-dark="assets/images/logo-dark.png">
-            </a>
-
-
-            <!-- There will be inserted loading spinner when ajax -->
-            <div class="nk-loading-spinner-place"></div>
-
-            <!-- Top Left Rotated -->
-            <div class="nk-layout-top-left-rotated">
-                <nav class="nk-nav">
-                    <ul>
-                        <li>
-                            <a href="studio.html">Studio</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Top Right -->
-        <div class="nk-layout-top-right">
-            <span class="nk-nav-toggle">
-                <span class="nk-icon-burger">
-                    <span class="nk-t-1"></span>
-                    <span class="nk-t-2"></span>
-                    <span class="nk-t-3"></span>
-                </span>
-            </span>
-        </div>
-
-        <!-- Bottom Left -->
-        <div class="nk-layout-bottom-left">
-            <nav class="nk-nav">
-                <ul>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Bottom Left Blog -->
-        <div class="nk-layout-bottom-left-blog">
-            <nav class="nk-nav nk-nav-hide">
-                <ul>
-                    <li class="hover"><a href="./">Close</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Bottom Center -->
-        <div class="nk-layout-bottom-center">
-            <nav class="nk-nav">
-                <ul>
-                    <li>
-                        <a href="mailto:info@umbrella.com">info@umbrella.com</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Titles -->
-        <div class="nk-layout-content-tagline">
-            <strong>12 Years of Experience</strong>
-        </div>
-        <h3 class="nk-layout-content-title">About.</h3>
-        <h3 class="nk-layout-content-subtitle">The Supermodels Always Bring Their Flawless Festival Style to Rio</h3>
-    </div>
-    <!-- END: Fixed Layout -->
-
-
-
-    <!-- START: Navbar -->
-    <div class="nk-navbar" id="nk-navbar">
-        <div class="nano">
-            <div class="nano-content">
-                <div class="nk-nav-table">
-                    <div class="nk-nav-row nk-nav-row-center">
-                        <nav class="nk-nav">
-                            <ul>
-                                <li>
-                                    <a href="blog.html">
-                                        <span>Blog</span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="about.html">
-                                        <span>About</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="team.html">
-                                        <span>Team</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                        <span>Contact Us</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="documentation.html">
-                                        <span>Help</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nk-navbar-bg">
-        <div class="nk-navbar-image hidden-lg-up" style="background-image: url('assets/images/bg-menu.jpg');"></div>
-    </div>
-    <!-- END: Navbar -->
-
-
-
-    <!--
-        START: Main Page Content
-
-        Additional Classes:
-            .active
-            .nk-main-lower-title - title will be visible under content text
-
-        Additional Attributes:
-            data-transition-speed - transition speed in milliseconds
-            data-transition-in - top, bottom, right. Show transition type
-            data-transition-out - top, bottom, right. Hide transition type
-
-        Note:
-            If you don't want to show content, just remove all content inside .nano-content and inside .nk-layout and remove .active class, but don't remove this block completely
-    -->
-    <div class="nk-main active" id="nk-main" data-transition-speed="500" data-transition-in="bottom" data-transition-out="right">
-        <div class="nano">
-            <div class="nano-content">
-                <div class="nk-vertical-top">
-                    <div>
-
-                        <div class="nk-tabs">
-                            <div class="nk-item-offset">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#tabs-1-1" role="tab" data-toggle="tab">History</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#tabs-1-2" role="tab" data-toggle="tab">Achievements</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#tabs-1-3" role="tab" data-toggle="tab">Why Choose Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#tabs-1-4" role="tab" data-toggle="tab">Goals</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="tabs-1-1">
-                                    <div class="nk-gap-3 mb-9"></div>
-
-                                    <h2 class="text-main">Umbrella. is an international fashion brand that represents style and quality since 1968. Founded in New York.</h2>
-                                    <div class="nk-gap-1"></div>
-
-                                    <p>More customers are embracing basics anddrifting back to classic styles from one of the most famous jean retailers in the world.</p>
-
-                                    <p>The world of fashion retail is ever changing, but we thrive on the challenge of constantly growing and adapting to succeed in this exciting industry. These progressive values are more than just ideals - we live them every day, in our dealings with our customers and our team.</p>
-
-                                    <p>Although many entrepreneurs who establish fashion companies are professional designers, this is not a pre-requisite. Regardless of professional background, there are a few things to know when starting a fashion company.</p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="tabs-1-2">
-                                    <div class="nk-gap-3 mb-9"></div>
-
-                                    <div class="row vertical-gap multi-columns-row">
-                                        <div class="col-sm-6">
-                                            <h3 class="display-2">70</h3>
-                                            <div>
-                                                Completed Projects. We strive to always enrich our customers lives through high quality fashion and services.
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h3 class="display-2">25</h3>
-                                            <div>
-                                                Awards Won. We achieve this by creating an outstanding retail environment, offering unique brands and a superior customer journey.
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h3 class="display-2">160</h3>
-                                            <div>
-                                                Today, our network encompasses over 160 stores, with operations in eight markets across the Center.
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h3 class="display-2">60</h3>
-                                            <div>
-                                                Umbrella is a regional fashion retail leader, with a world-class portfolio of over 60 high-end fashion, footwear and accessories brands.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="tabs-1-3">
-                                    <div class="nk-gap-3 mb-9"></div>
-
-                                    <p>
-                                        <strong>Service:</strong> Every customer deserves a great shopping experience, every time. Our team’s commitment to delivering the highest levels of service is what makes us distinctive.</p>
-
-                                    <p>
-                                        <strong>Integrity and Trust:</strong> We are honorable and ethical in everything we do. Our reputation is built on respect for others, exemplary behavior and the trust our stakeholders place in us.</p>
-
-                                    <p>
-                                        <strong>Passion for Winning:</strong> We love what we do, and want to be the best at it. We strive for success by always aiming higher – not just meeting our objectives, but exceeding expectations as well.</p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="tabs-1-4">
-                                    <div class="nk-gap-3 mb-9"></div>
-
-                                    <p>Our goal is to be the employer, partner and retail destination of choice in the Asia & Middle East. We will achieve this by building a creative and inclusive community with a culture of knowledge and innovation.</p>
-
-                                    <p>We will enrich our customers lives through high quality fashion and services. We strive to achieve this by creating an outstanding retail environment, offering unique brands and a superior customer journey</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bottom Right Info -->
-        <div class="nk-layout">
-            <div class="nk-layout-bottom-right-rotated">
-                <strong class="text-main">+1 35 1481 527</strong>
-            </div>
-        </div>
-    </div>
-    <div class="nk-main-bg"></div>
-    <!-- END: Main Page Content -->
-
-    <!--
-        START: Blog
-
-        Additional Classes:
-            .active
-
-        Note:
-            If you don't want to show blog, just remove all content inside and remove .active class, but don't remove this block completely
-    -->
-    <div class="nk-blog" id="nk-blog">
-
-    </div>
-    <!-- END: Blog -->
-
-
-
-
-    <!-- START: Scripts -->
-
-    <!-- GSAP -->
-    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
-    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
-
-    <!-- History.js -->
-    <script src="assets/bower_components/history.js/scripts/bundled/html4%2Bhtml5/jquery.history.js"></script>
-
-    <!-- Bootstrap Custom -->
-    <script src="assets/js/bootstrap-custom.min.js"></script>
-
-    <!-- Jquery Form -->
-    <script src="assets/bower_components/jquery-form/jquery.form.js"></script>
-
-    <!-- Jquery Validation -->
-    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
-
-    <!-- Hammer.js -->
-    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
-
-    <!-- NanoSroller -->
-    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
-
-    <!-- Background Check Custom -->
-    <script src="assets/plugins/background-check/background-check.min.js"></script>
-
-    <!-- Jarallax Video -->
-    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
-
-    <!-- Umbrella -->
-    <script src="assets/js/umbrella.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/umbrella-init.js"></script>
-    <!-- END: Scripts -->
-
-
-
+<body class="royal_preloader">	
+	
+	<div id="royal_preloader"></div>
+	
+	
+	<!-- MENU
+    ================================================== -->	
+
+		<nav id="menu-wrap" class="menu-back cbp-af-header menu-have-back-color"> <!-- fixed container -->
+		<div class="parallax-1" style="background-image: url('images/parallax-about.jpg')"></div> <!-- background parallax image on menu -->
+		<div class="dark-over"></div>
+			<div class="menu-container">
+				<div class="logo"><img src="images/logo-light.png" alt="" /></div> <!-- logo in absolute position -->
+				<div class="menu"> <!-- menu start -->
+					<ul> <!-- 1st ul -->
+						<li> 
+							<a href="#">home</a> <!-- main links -->
+							<ul class="normal-sub"> 
+								<li><a href="index.html">portfolio home</a></li>
+								<li><a href="index1.html">creative agency</a></li>
+								<li><a href="index2.html">studio case study</a></li>
+								<li><a href="index3.html">freelance designer</a></li>
+								<li><a href="index4.html">video production</a></li>
+								<li><a href="index5.html">creative shop</a></li>
+							</ul> 
+						</li>	
+						<li>
+							<a href="#">work</a> <!-- main links -->
+							<ul>
+								<li><p>masonry style</p> <!-- text with border bottom over links -->
+									<ul>
+										<li><a href="mas-two-col.html">two columns</a></li>
+										<li><a href="mas-three-col.html">three columns</a></li>
+										<li><a href="mas-four-col.html">four columns</a></li>
+										<li><a href="mas-two-col-wide.html">two columns wide <span>hot</span></a></li>
+										<li><a href="mas-three-col-wide.html">three columns wide</a></li>
+										<li><a href="mas-four-col-wide.html">four columns wide</a></li>
+									</ul>
+								</li>
+								<li><p>masonry with space</p> <!-- text with border bottom over links -->
+									<ul>
+										<li><a href="mas-two-col-space.html">two columns</a></li>
+										<li><a href="mas-three-col-space.html">three columns</a></li>
+										<li><a href="mas-four-col-space.html">four columns</a></li>
+										<li><a href="mas-two-col-wide-space.html">two columns wide</a></li>
+										<li><a href="mas-three-col-wide-space.html">three columns wide</a></li>
+										<li><a href="mas-four-col-wide-space.html">four columns wide</a></li>
+									</ul>
+								</li>
+								<li><p>grid style</p> <!-- text with border bottom over links -->
+									<ul>
+										<li><a href="grid-two-col.html">two columns</a></li>
+										<li><a href="grid-three-col.html">three columns</a></li>
+										<li><a href="grid-four-col.html">four columns</a></li>
+										<li><a href="grid-two-col-wide.html">two columns wide</a></li>
+										<li><a href="grid-three-col-wide.html">three columns wide</a></li>
+										<li><a href="grid-four-col-wide.html">four columns wide</a></li>
+									</ul>
+								</li>
+								<li><p>gallery style</p> <!-- text with border bottom over links -->
+									<ul>
+										<li><a href="gallery-two-col.html">two columns</a></li>
+										<li><a href="gallery-three-col.html">three columns</a></li>
+										<li><a href="gallery-four-col.html">four columns</a></li>
+										<li><a href="gallery-two-col-wide.html">two columns wide <span>hot</span></a></li>
+										<li><a href="gallery-three-col-wide.html">three columns wide</a></li>
+										<li><a href="gallery-four-col-wide.html">four columns wide</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li> 
+							<a href="#" class="curent-multi-page">pages</a> <!-- main links -->
+							<ul class="normal-sub"> 
+								<li><a href="about.html" class="curent-multi-page">about</a></li>
+								<li><a href="services.html">services</a></li>
+								<li>
+									<a href="#">utility<span class="go-right-icon"></span></a> <!-- go-left-icon in span for go-left submenu -->
+									<ul class="go-right"> <!-- left submenu -->
+										<li><a href="maintenance.html"><span class="link-icon fa-tachometer"></span>Maintenance</a></li>
+										<li><a href="coming-soon.html"><span class="link-icon fa-puzzle-piece"></span>coming soon</a></li>
+										<li><a href="404.html"><span class="link-icon fa-exclamation-triangle"></span>error 404</a></li>
+										<li><a href="faq.html"><span class="link-icon fa-life-ring"></span>faq</a></li>
+									</ul>
+								</li>
+							</ul> 
+						</li>	
+						<li> 
+							<a href="#">journal</a> <!-- main links -->
+							<ul class="normal-sub"> 
+								<li><a href="blog.html">journal classic</a></li>
+								<li><a href="blog-mas.html">journal masonry</a></li>
+								<li><a href="post.html">single post</a></li>
+							</ul> 
+						</li>
+						<li> 
+							<a href="#">shop</a> <!-- main links -->
+							<ul class="normal-sub"> 
+								<li>
+									<a href="#">products<span class="go-left-icon"></span></a> <!-- go-left-icon in span for go-left submenu -->
+									<ul class="go-left"> <!-- left submenu -->
+										<li><a href="shop-grid.html">shop grid</a></li>
+										<li><a href="shop-mas.html">shop masonry</a></li>
+										<li><a href="shop-parallax.html">shop parallax</a></li>
+									</ul>
+								</li>
+								<li><a href="product.html">single product</a></li>
+								<li><a href="checkout.html">checkout</a></li>
+							</ul> 
+						</li>
+						<li> 
+							<a href="contact.html">contact</a> <!-- main links -->
+						</li>
+						<li class="social-mobile"> <!-- social icons, add class .first-icon on 1st link if you want it to have margin left from main links -->
+							<a href="#" class="social first-icon fa-twitter tipped" data-title="twitter"  data-tipper-options='{"direction":"bottom","follow":"true","margin":30}'></a>
+						</li>
+						<li class="social-mobile"> <!-- social icons -->
+							<a href="#" class="social fa-facebook tipped" data-title="facebook"  data-tipper-options='{"direction":"bottom","follow":"true","margin":30}'></a>
+						</li>
+						<li class="social-mobile"> <!-- social icons -->
+							<a href="#" class="social fa-github tipped" data-title="github"  data-tipper-options='{"direction":"bottom","follow":"true","margin":30}'></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<!-- END MENU
+    ================================================== -->	
+
+	
+	
+	<!-- Page Layout 
+	================================================== -->
+
+		<div class="section half-height" id="home">
+		<div class="parallax-1" style="background-image: url('images/parallax-about.jpg')"></div>
+		<div class="dark-over"></div>
+			
+			<div class="home-text-freelance z-bigger">
+				<div class="container fade-elements">
+					<div class="twelve columns">
+						<div class="section-title title-page-sec fade-elements">
+							<div class="shadow-title">about us</div>	
+							<h3>who we are</h3>
+							<p>WE TAKE PRIDE IN DELIVERING ONLY THE BEST</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		
+		<div class="section padding-top-bottom-small back-dark2">
+			<div id="owl-sep-1" class="owl-carousel owl-theme">								 
+				<div class="item">															
+					<div class="container">	
+						<div class="twelve columns">	
+							<div class="quote-sep">	
+								<h4>"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h4>
+							</div>	
+						</div>	
+					</div>											
+				</div>											
+				<div class="item">														
+					<div class="container">	
+						<div class="twelve columns">	
+							<div class="quote-sep">
+								<h4>"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works."</h4>
+							</div>	
+						</div>	
+					</div>									
+				</div>											
+				<div class="item">														
+					<div class="container">	
+						<div class="twelve columns">	
+							<div class="quote-sep">
+								<h4>"Space and light and order. Those are the things that men need just as much as they need bread or a place to sleep."</h4>
+							</div>	
+						</div>	
+					</div>									
+				</div>								 
+			</div>
+		</div>
+		
+		
+			<div class="section padding-top-bottom back-dark">
+				<div class="container">	
+					<div class="twelve columns remove-bottom">
+						<div class="section-title">
+							<h4>our team</h4>
+						</div>	
+					</div>
+					<div class="three columns"  data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
+						<div class="team-wrap">
+							<img src="images/team1.jpg" alt="Some image" />
+							<h5>Alex Andrews</h5>
+							<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst.</p>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="pinterest"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf231;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="three columns"  data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">
+						<div class="team-wrap">
+							<img src="images/team2.jpg" alt="Some image" />
+							<h5>Marco Kulis</h5>
+							<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst.</p>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="pinterest"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf231;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="three columns"  data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
+						<div class="team-wrap">
+							<img src="images/team3.jpg" alt="Some image" />
+							<h5>Frank Furius</h5>
+							<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst.</p>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="pinterest"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf231;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="three columns"  data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
+						<div class="team-wrap">
+							<img src="images/team4.jpg" alt="Some image" />
+							<h5>Alex Kulis</h5>
+							<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst.</p>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-team tipped" data-title="pinterest"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf231;</a>
+									</li>
+									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="#">&#xf09a;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				
+		<div class="section padding-top-bottom-small back-dark2">	
+			<div class="container">
+				<div class="three columns">
+					<div class="counter-wrap freelance-num">
+						<p><span class="counter-numb">247</span></p>
+						<h5>clients</h5>
+					</div>	
+				</div>
+				<div class="three columns">
+					<div class="counter-wrap freelance-num">
+						<p><span class="counter-numb">319</span></p>
+						<h5>projects</h5>
+					</div>	
+				</div>
+				<div class="three columns">
+					<div class="counter-wrap freelance-num">
+						<p><span class="counter-numb">131</span></p>
+						<h5>brands</h5>
+					</div>	
+				</div>
+				<div class="three columns">
+					<div class="counter-wrap freelance-num">
+						<p><span class="counter-numb">151</span></p>
+						<h5>awards</h5>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		
+		
+		<div class="section">
+			<div class="section back-black padding-top-bottom-small z-bigger">
+				<div class="container z-bigger">
+					<div class="twelve columns">
+						<div id="owl-logos" class="owl-carousel owl-theme">											 
+							<div class="item">
+								<img  src="images/logos/white1.png" alt="" />
+							</div>											
+							<div class="item">
+								<img  src="images/logos/white2.png" alt="" />
+							</div>											
+							<div class="item"> 
+								<img  src="images/logos/white3.png" alt="" />
+							</div>											 
+							<div class="item">
+								<img  src="images/logos/white4.png" alt="" />
+							</div>										
+							<div class="item">
+								<img  src="images/logos/white5.png" alt="" />
+							</div>											
+							<div class="item"> 
+								<img  src="images/logos/white6.png" alt="" />
+							</div>											 
+							<div class="item">
+								<img  src="images/logos/white1.png" alt="" />
+							</div>											
+							<div class="item">
+								<img  src="images/logos/white2.png" alt="" />
+							</div>											
+							<div class="item"> 
+								<img  src="images/logos/white3.png" alt="" />
+							</div>											 
+							<div class="item">
+								<img  src="images/logos/white4.png" alt="" />
+							</div>											
+							<div class="item">
+								<img  src="images/logos/white5.png" alt="" />
+							</div>											
+							<div class="item"> 
+								<img  src="images/logos/white6.png" alt="" />
+							</div>							
+						</div>	
+					</div>
+				</div>
+			</div>	
+		</div>
+
+				
+		<div class="section back-dark padding-top-bottom overflow-hidden">
+			<div class="container">
+				<div class="six columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<div class="footer-top">
+						<img src="images/logo-light.png" alt="Some image" />
+					</div>
+				</div>
+				<div class="six columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<div class="footer-top">
+						<div class="social-footer">
+							<ul class="list-social-footer">
+								<li class="icon-footer tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+									<a href="#">&#xf099;</a>
+								</li>
+								<li class="icon-footer tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+									<a href="#">&#xf09b;</a>
+								</li>
+								<li class="icon-footer tipped" data-title="pinterest"  data-tipper-options='{"direction":"top","follow":"true"}'>
+									<a href="#">&#xf231;</a>
+								</li>
+								<li class="icon-footer tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+									<a href="#">&#xf09a;</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="twelve columns remove-top remove-bottom" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<div class="footer-line"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<div class="left-footer">
+						<p>2016 © Eurybia. All rights reserved.</p>
+					</div>
+				</div>
+				<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<a href="#home" data-gal="m_PageScroll2id"><div class="arrow-up-footer"></div></a>
+				</div>
+				<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.4s">
+					<div class="right-footer">
+						<p>With love from IG Design.</p>
+					</div>
+				</div>
+			</div>	
+		</div>	
+
+
+	
+
+	
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>	
+<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/custom-about.js"></script>    
+<!-- End Document
+================================================== -->
 </body>
-
 </html>

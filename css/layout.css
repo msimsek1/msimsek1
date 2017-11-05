@@ -994,7 +994,7 @@ ul.tabs.light li.current,
 }
 .logo.move-for-left{
 	left:auto;
-	right:0;
+	right:50;
 }
 .menu.move-for-left > ul {
 	float:none;

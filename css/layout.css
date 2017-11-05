@@ -432,14 +432,14 @@ body.royal_preloader {
 .logo{
 	position:absolute;
 	z-index:10000;
-	top:45px;
+	top:30px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
 .logo img{
-	width:160px;
+	width:120px;
 	display:block;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
@@ -994,7 +994,7 @@ ul.tabs.light li.current,
 }
 .logo.move-for-left{
 	left:auto;
-	right:50;
+	right:0;
 }
 .menu.move-for-left > ul {
 	float:none;
@@ -4397,7 +4397,7 @@ Menu Mobile style's
 	.cbp-af-header.cbp-af-header-shrink .logo{
 		position:absolute;
 		z-index:10000;
-		top:40px;
+		top:20px;
 		-webkit-transition : all 0.3s ease-out;
 		-moz-transition : all 0.3s ease-out;
 		-o-transition :all 0.3s ease-out;
@@ -4413,7 +4413,7 @@ Menu Mobile style's
 	.logo{
 		position:absolute;
 		z-index:10000;
-		top:40px;
+		top:20px;
 		-webkit-transition : all 0.3s ease-out;
 		-moz-transition : all 0.3s ease-out;
 		-o-transition :all 0.3s ease-out;

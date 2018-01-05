@@ -9,7 +9,7 @@ replace preview images directly;
 
 
 .menu-panel .cd-panel-content{
-    background-image: url('../images/menu.jpg');
+    background-color: firebrick;
 }
 .intro-02-bg{
     background-image: url('../images/bg/01.jpg');

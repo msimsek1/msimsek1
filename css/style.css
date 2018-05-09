@@ -267,14 +267,14 @@ ul.header-nav{
 }
 
 header .logo > img{
-    padding-top: 1.7em;
-    width: 100px;
+padding-top: 20px;
+width: 110px;
   font-size:23px;
   font-weight:800;
   float:left;
   line-height:80px;
   padding-right:40px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 0px solid #f1f1f1;
 }
 
 header .logo > a:hover{

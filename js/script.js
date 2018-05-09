@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["show case ", "projects "],
+            strings: ["the producer ", "the designer ", "the photographer ", "the creative "],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,
@@ -177,7 +177,7 @@ $(document).ready(function(){
             loopCount: false,
         });
     }
-	}, 3000);
+	}, 5000);
 });
 }
 

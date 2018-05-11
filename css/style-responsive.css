@@ -236,6 +236,10 @@
   .logo, .menu-index{
     display:block;
   }
+    
+    .logo{
+     top: 20%;   
+    }
 
   header.boxed{
     display:none !important;

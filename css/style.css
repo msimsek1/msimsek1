@@ -268,7 +268,7 @@ ul.header-nav{
   float:left;
 }
 
-header .logo > img{
+header .logo > a> img{
 padding-top: 31px;
 width: 110px;
   font-size:23px;
@@ -279,8 +279,8 @@ width: 110px;
   border-bottom: 0px solid #f1f1f1;
 }
 
-header .logo > a:hover{
-  color:#c3c3c3;
+header .logo > a> img:hover{
+  opacity: 0.6;
 }
 
 header li{

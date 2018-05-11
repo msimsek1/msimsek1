@@ -171,7 +171,7 @@ $(document).ready(function(){
             strings: ["the producer ", "the designer ", "the photographer ", "the creative "],
             typeSpeed: 100,
             backDelay: 500,
-            loop: false,
+            loop: true,
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,

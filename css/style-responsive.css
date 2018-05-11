@@ -333,9 +333,13 @@
   #footer-left{text-align:center;}
   
   .content .text-intro h1{
-    font-size:33px; 
-    line-height:50px;
+    font-size:25px; 
+    line-height:31px;
   }
+
+    .content .text-intro p{
+        margin-top: 10px;
+    }
 
   /*
   **************************

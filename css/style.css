@@ -33,8 +33,9 @@ a{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
-	border-bottom:1px solid #dedede;
+	border-bottom:0px solid #dedede;
 }
+
 
 a:focus {
   outline:none;
@@ -271,16 +272,17 @@ ul.header-nav{
 header .logo > a> img{
 padding-top: 31px;
 width: 110px;
-  font-size:23px;
-  font-weight:800;
-  float:left;
-  line-height:80px;
-  padding-right:40px;
-  border-bottom: 0px solid #f1f1f1;
+border-bottom: 0px solid #f1f1f1;
+    -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+	border-bottom:0px solid #dedede;
 }
 
-header .logo > a> img:hover{
-  opacity: 0.6;
+header .logo > a >img:hover {
+    opacity: 0.6;
 }
 
 header li{
